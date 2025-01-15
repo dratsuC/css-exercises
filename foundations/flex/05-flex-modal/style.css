@@ -15,12 +15,53 @@ body {
   justify-content: center;
 }
 
+/* FLEX-CONTENT */
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
+
+.col1 {
+  margin: 5px;
+
+}
+.col2 {
+  padding-left: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+.title {
+  flex: auto;
+  font-weight: 700;
+  font-size: 125%;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  /* padding: 10px 0px; */
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* END FLEX-CONTENT */
 
 .icon {
   color: royalblue;
@@ -47,7 +88,10 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
-  padding: 0;
+  padding: 5px;
+
+  flex: 0 0 auto;
+
 }
 
 button {
